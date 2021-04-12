@@ -1,0 +1,1 @@
+﻿Get-EventLog -ComputerName AD -LogName System  | ? {$_.eventid -eq "1074"}  | Export-Csv Z:\Study_material\event.csv -NoTypeInformation
